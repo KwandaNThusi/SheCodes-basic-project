@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Basic's Project</title>
+      <style>
+        body {background-color:#4d0000;}
+        .heading {color:  #ffffff;
+                 text-align: center;
+                 font-size: 60px;
+                 font-style: oblique;
+                 text-shadow:3px 2px palevioletred;
+                 border: thick double #ff8080;
+                 border-radius: 20px 20px 20px 20px;
+                 box-shadow:12px 12px 2px 1px black;
+                
+                 }         
+        h2 {text-align: center;
+            color: #ffffff;
+            font-style: italic;
+            font-size: 50px;
+           }
+        .glasses {width: 400px;
+                  display:block;
+                  margin: 0 auto;
+                 }
+        strong {font-size: 40px;
+                font-style: italic;
+                font-weight: bold;}
+        p {text-align: center;
+           font-size: 30px;
+           color: #ffffff;}
+        h3 {text-align: center;
+            margin: 0 120px;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 1px black;
+            text-decoration: underline;
+            }
+        ul {margin: 0 10px;
+            list-style: none;
+            color: #ffffff;
+            text-align: center;
+            padding: 0;
+            font-size: 30px;
+           }
+        .learn-more{color: #ffffff;
+                    text-decoration: underline;
+                    font-size: 30px;
+                   }
+   
+        button {display: block;
+                margin: 0 auto 40px;
+                padding: 40px 80px;
+                font-size: 40px;
+                color: white;
+                font-weight: bold;
+                background: transparent;
+                border: thick double white;
+                border-radius: 40px 40px 40px 40px;
+                box-shadow: 22px 22px 4px 2px maroon;
+                transition: all 200ms ease-in-out;
+               } 
+        button:hover {background-color: white;
+                      color: #4d0000;
+                      cursor: pointer;
+                     }
+        .developer {text-align: center;
+                    font-style: italic;
+                    font-size: 30px;
+                    color: #ffffff;}
+     </style>
+ </head>
+<body>
+    <h1 class="heading">WHAT AGES <em>FINER</em> THAN WINE</h1>
+     <br/>
+      <h2>Uncork the Fun, Unleash the Flavor</h2>
+    <br/>
+     <hr/>
+    <br/>
+     <img src="images/Wine glasses.png" width="400" height="400" class="glasses"/>
+    <hr/>
+     <p><strong>WINE</strong>, "The Language of Love ❤️"..."Cheers to Life's Little Pleasures🪩"..."Celebrate Every Occasion with Wine🎉".</p>
+     <p class="about">For the longest of times <em>wine</em> has always been known to be useful in many ways than one. It may be catergorised as an alcoholoic beverage however because of the integrity it holds, <em>wine</em> is usually consumed in moments that are meant to be memorable.</p>
+        <br/>
+    <h3>There are 4 main types of <em>wine</em>:</h3>
+        <ul>
+            <li class="types"> White <em>Wine</em>.</li>
+            <li class="types">Rosé</li>
+            <li class="types">Red <em>Wine</em>.</li>
+            <li class="types">Sparkling <em>Wine</em>.</li>
+        </ul>
+        <br/>
+      <h3> Best South African <em>Wines</em></h3>
+      <ul>
+        <li>Beaumont Pinotage 2019.</li>
+        <li>Klein Constantia Chardonnay 2017.</li>
+        <li> Neil Ellis Whitehall Chardonnay 2020.</li>
+      </ul>
+
+       <p>Red wine being the most populate not only for its great taste however also because it is well known as it is good for 
+          heart health because it helps reduce the risk of plaque buildup in the arteries.
+           <br/>
+          Best red <em>wines</em>for beginners: Gamay! Gamay is a light-to-medium-bodied red <em>wine</em> from France.<br/>
+          Merlot! Merlot is a medium-to-full-bodied red <em>wine</em> originally from France, though now it's grown all over the world
+       </p>
+       <a href="https://www.arenaflowers.com/pages/history-of-wine/" target="_blank" class="learn-more">Learn more on Wikipedia</a>
+        
+       <button class="buy-button">ORDER <em>WINE!</em></button>
+       <h3 class="developer">This page was built by Kwanda Thusi </h3>
+</body>
+<script>
+    function buy()
+     {let firstName = prompt ("What is your First Name?");
+      let lastName = prompt ("What is your Last Name?");
+      let age = prompt ("How old are you?");
+       if (age >=18 )
+        alert ("Thank you "+ firstName + lastName +" , You can continue to order your wine! 🍷");
+       else 
+        alert ("Sorry you can not order some wine 😓")
+     }
+     let buyButton = document.querySelector(".buy-button");
+     buyButton.addEventListener("click",buy);
+
+</script>
+</html>
